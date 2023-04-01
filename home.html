@@ -11,20 +11,37 @@
     
 
     <style>
-        body
-             {
-                margin: 0;
-                padding: 0;
-                /* background-image: url(img_ecom/signupbg.jpg); */
-                background-color: #9A616D;
-                width: 100%;
-                height: 100vh;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                font-family: Lucida Sans;
-             }
+        body{
+            margin: 0;
+            padding: 0;
+            /* background-image: url(img_ecom/signupbg.jpg); */
+            background-color: #9A616D;
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Lucida Sans;
+        }
+
+        #signoutbtn{
+            height: 5vh;
+            border-radius: 4px;
+            background-color: antiquewhite;
+            border-width: 1px;
+  
+        }
+
+        #signoutbtn:hover{
+            /* background-color: rgb(118, 119, 119);
+            color: aliceblue; */
+            transition-delay: 10ms;
+            transition-timing-function: ease-in-out;
+            transition-duration: 170ms;
+            background-color: #6c757d ;
+            color: white;
+        }
         
     </style>
 </head>
@@ -67,11 +84,7 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <a class="nav-link" href="index.html">Sign out</a>&emsp;
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <a href="index.html"><button id="signoutbtn" type="button">Sign out</button></a>
             </div>
         </div>
     </nav>
