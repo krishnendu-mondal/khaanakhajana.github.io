@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up to Khaana Khajana</title>
+    <title>Khaana Khajana | Sign up</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
     <style>
-        body
-            {
+        body{
                 margin: 0;
                 padding: 0;
               /*  background-image: url(img_ecom/signupbg.jpg); */
@@ -24,7 +23,51 @@
                 background-attachment: fixed;
                 font-family: Lucida Sans;
             }
-            
+
+            #signupbtn{
+                height: 5vh;
+                width: auto;
+                min-width: 100%;
+                border-radius: 4px;
+                background-color:  rgb(215, 47, 81);
+                color:white;
+                border: none;
+                margin-bottom: 25px;
+  
+            }
+
+            #signupbtn:hover{
+                transition-delay: 10ms;
+                transition-timing-function: ease-in-out;
+                transition-duration: 100ms;
+                background-color:#a83885;
+                color: white;
+            }
+
+            #signinbtn{
+                height: 5vh;
+                width: auto;
+                min-width: 30%;
+                border-radius: 4px;
+                background-color:  rgb(215, 47, 81);
+                color:white;
+                border: none;
+  
+            }
+
+            #signinbtn:hover{
+                transition-delay: 10ms;
+                transition-timing-function: ease-in-out;
+                transition-duration: 100ms;
+                background-color:#a83885;
+                color: white;
+            }
+            #create{
+                text-align: center;
+                margin-bottom: 25px;
+                margin-top: 15px;
+            }
+
     </style>
 </head>
 <body>
@@ -70,59 +113,55 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-3 bg-white m-auto" style="border-radius: 6px;">
 
-    <section class="vh-80 bg-image" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
-    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-        <div class="container h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                    <div class="card" style="border-radius: 15px;">
-                        <div class="card-body p-5">
-                            <h1 class="text-center mb-5" style="color: crimson;">Create an account</h1>
-
-                            <form>
-
-                                <div class="form-outline mb-4">
-                                    <input type="text" id="form3Example1cg" class="form-control form-control-lg" placeholder="Enter your name" required/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" placeholder="Email address" required/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <input type="password" id="form3Example4cg" class="form-control form-control-lg" placeholder="Create password" required/>
-                                </div>
-
-                                <div class="form-outline mb-4">
-                                    <input type="password" id="form3Example4cdg" class="form-control form-control-lg" placeholder="Repeat your password" required/>
-                                </div>
-
-                                <div class="form-check d-flex justify-content-center mb-5">
-                                    <input class="form-check-input me-2" type="checkbox" value=""
-                                        id="form2Example3cg" />
-                                    <label class="form-check-label" for="form2Example3g">
-                                        I agree all statements in <a href="#!" class="text-body"><u>Terms of
-                                                service</u></a>
-                                    </label>
-                                </div>
-
-                                <div class="d-flex justify-content-center">
-                                    <button type="submit"
-                                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
-                                </div>
-
-                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="customerlogin.html"
-                                        class="fw-bold text-body"><u>Login here</u></a></p>
-
-                            </form>
-
-                        </div>
-                    </div>
+                <div class="mt-4 mb-4">
+                    <h2 class="text-center" style="color: crimson;">Sign up</h2>
                 </div>
+                
+                <form action="#" style="margin: 6%;">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Name" required>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email address" required>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Create password" required>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Confirm password" required>
+                    </div>
+
+                    <div class="form-check d-flex mb-1 text-muted">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" required/>
+                        <label class="form-check-label" for="form2Example3g">I agree to your <a href="#" style="text-decoration: none; color: crimson;">Terms & Condition</a></label>
+                    </div>
+
+                    <div id="create">
+                        <button type="submit" id="signupbtn">Create Account</button>
+                    </div>      
+                </form>
+                <div class="text-center mt-5 mb-4">
+
+                    <p class="text-muted">Already have an account ?</p>
+                    <a href="customerlogin.html"><button type="button" id="signinbtn">Sign in</button></a>
+                    
+                </div>
+
             </div>
+            </div>
+            
+            
         </div>
+        
     </div>
-    </section>
+    
+
 </body>
 </html>

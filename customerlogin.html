@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in to Khaana Khajana</title>
+    <title>Khaana Khajana | Sign in</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -15,6 +15,7 @@
             margin: 0;
             padding: 0;
             /* background-image: url(img_ecom/signupbg.jpg); */
+            background-color: #9A616D;
             width: 100%;
             height: 100vh;
             background-position: center;
@@ -67,6 +68,51 @@
             
         }
 
+        #signupbtn{
+            height: 5vh;
+            width: auto;
+            min-width: 100%;
+            border-radius: 4px;
+            background-color:  rgb(215, 47, 81);
+            color:white;
+            border: none;
+            margin-bottom: 25px;
+  
+        }
+
+        #signupbtn:hover{
+            transition-delay: 10ms;
+            transition-timing-function: ease-in-out;
+            transition-duration: 100ms;
+            background-color:#a83885;
+            color: white;
+        }
+
+        #signinbtn{
+            height: 5vh;
+            width: auto;
+            min-width: 30%;
+            border-radius: 4px;
+            background-color:  rgb(215, 47, 81);
+            color:white;
+            border: none;
+
+        }
+
+        #signinbtn:hover{
+            transition-delay: 10ms;
+            transition-timing-function: ease-in-out;
+            transition-duration: 100ms;
+            background-color:#a83885;
+            color: white;
+        }
+
+        #create{
+            text-align: center;
+            margin-bottom: 25px;
+            margin-top: 15px;
+        }
+
         
     </style>
     
@@ -114,55 +160,44 @@
         </div>
     </nav>
  
-    <section class="vh-100" style="background-color: #9A616D;">
-        <div class="container py-1 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col col-xl-10">
-                    <div class="card" style="border-radius: 1rem;">
-                        <div class="row g-0">
-                            <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="img_ecom/login-image.jpg"
-                                    alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
-                            </div>
-                            <div class="col-md-6 col-lg-7 d-flex align-items-center">
-                                <div class="card-body p-4 p-lg-5 text-black">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-3 bg-white m-auto" style="border-radius: 6px;">
     
-                                    <form>
-                                        <h1 style="color: crimson; text-align: center;">Khaana Khajana</h1>
-                                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px; text-align: center;">Log In to Your Account</h5>
-    
-                                        <div class="form-outline mb-4">
-                                            <input type="email" id="form2Example17" class="form-control form-control-lg" required placeholder="Email address"/>
-                                        </div>
-    
-                                        <div class="form-outline mb-4">
-                                            <input type="password" id="form2Example27"class="form-control form-control-lg" required placeholder="password"/>
-                                        </div>
-
-                                        <div class="form-check d-flex mb-4">
-                                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
-                                            <label class="form-check-label" for="form2Example3g">
-                                                Remember me
-                                            </label>
-                                        </div>
-
-                                        <a href="#"><button class="mb-5" id="loginbtn" type="submit">Login</button></a>
-                                        
-                                        <p class="pb-lg-2" style="color: #397181; font-size: 22px;">New to Khaana Khajana ?</p>
-                                        <a href="registration.html"><button id="signupbtn" type="button">Create an account</button></a>
-    
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="mt-4 mb-4">
+                    <h2 class="text-center" style="color: crimson;">Sign in</h2>
                 </div>
+    
+                <form action="#" style="margin: 6%;">
+
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email address" required>
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Password" required>
+                    </div>         
+    
+                    <div class="form-check d-flex mb-2 text-muted">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" required />
+                        <label class="form-check-label" for="form2Example3g">Remember me</label>
+                    </div>
+    
+                    <div id="create" class="mb-1">
+                        <button type="submit" id="signupbtn">Sign in</button>
+                    </div>
+                </form>
+
+                <div class="text-center mt-5 mb-4">
+    
+                    <p class="text-muted">New to Khaana Khajana ?</p>
+                    <a href="registration.html"><button type="button" id="signinbtn">Sign up</button></a>
+    
+                </div>
+
             </div>
         </div>
-    </section>
-
-    
-
+    </div>
     
 </body>
 </html>
