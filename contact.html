@@ -42,13 +42,14 @@
         }
 
         section{
-            padding: 40px 19%;
+            padding: 40px 10%;
+            margin: 0% 10%;
         }
 
         .contact{
-            background:rgb(154, 97, 109);
-            height: 100%;
-            width: 100%;
+            background:rgba(0, 0, 0, 0.405);
+            height: 80%;
+            width: 80%;
             min-height: 100%;
             display: grid;
             grid-template-columns: repeat(2, 2fr);
@@ -60,11 +61,12 @@
             max-width: 100%;
             width: 700px;
             height: auto;
-            border-radius: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px black;
         }
         .contact-form h1{
             font-size: 50px;
-            color: #cd0746;
+            color: #f9004d;
             margin-bottom: 20px;
         }
         .contact-form p{
@@ -86,7 +88,8 @@
             background: #191919a4;
             color: #fff;
             margin-bottom: 0.7rem;
-            border-radius: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px black;
 
         }
         ::placeholder{
@@ -101,18 +104,24 @@
             background: #f9004d;
             font-size: 1.1rem;
             letter-spacing: 1px;
-            text-transform: uppercase;
             font-weight: 600;
             border: 2px solid transparent;
-            border-radius: 6px;
+            border-radius: 8px;
+            height: 45px;
             width: 120px;
             transition: ease 0.2s;
             cursor: pointer;
+            box-shadow: 0px 1.8px #000;
+            color: #fff;
         }
         .contact-form .submitbtn:hover{
-            border: 2px solid #f9004d;
+            /* border: 2px solid #f9004d;
             background: transparent;
-            transform: scale(1.1);
+            transform: scale(1.1); */
+            transition-delay: 10ms;
+            transition-timing-function: ease-in-out;
+            transition-duration: 100ms;
+            background-color:#a83885;
         }
     </style>
 
@@ -166,13 +175,13 @@
     <section class="contact">
         <div class="contact-form">
             <h1>Contact Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. fugit magnam exercitationem soluta, labore pariatur quod?</p>
+            <p>For any of your query, feel free to ask here. <br> Regards - Khaana Khajana</p>
 
             <form action="#">
                 <input type="text" name="Name" placeholder="Name" required>
                 <input type="email" name="Email" placeholder="Email" required>
-                <textarea id="" cols="30" rows="10" name="Comments" placeholder="Comments & Queries" required></textarea>
-                <input type="submit" class="submitbtn">
+                <textarea id="" cols="30" rows="10" name="Comments" placeholder="Comments & queries" required></textarea>
+                <button class="submitbtn" type="submit">Submit</button>
             </form>
         </div>
         <div class="contact-img">
